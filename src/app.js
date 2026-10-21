@@ -1,10 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import healthRoutes from './modules/health/health.routes.js';
-import branchesRoutes from './modules/branches/branches.routes.js';
-import departmentsRoutes from './modules/departments/departments.routes.js';
-import slotsRoutes from './modules/slots/slots.routes.js';
-import bookingsRoutes from './modules/bookings/bookings.routes.js';
+import healthRoutes from './modules/health/routes/health.routes.js';
+import branchesRoutes from './modules/branches/routes/branches.routes.js';
+import departmentsRoutes from './modules/departments/routes/departments.routes.js';
+import slotsRoutes from './modules/slots/routes/slots.routes.js';
+import bookingsRoutes from './modules/bookings/routes/bookings.routes.js';
 import { errorHandler } from './shared/middleware/error-handler.js';
 import { bookingRateLimit, publicReadRateLimit } from './shared/middleware/rate-limit.js';
 import { attachRequestId } from './shared/middleware/request-id.js';

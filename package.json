@@ -9,7 +9,7 @@
     "start:worker": "node --env-file=.env src/worker.js",
     "db:migrate": "node --env-file=.env db/migrate.js",
     "availability:refresh": "node --env-file=.env src/refresh-availability.js",
-    "lint": "eslint src",
+    "lint": "eslint src tests",
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch",
     "build": "node --check src/server.js && node --check src/worker.js"

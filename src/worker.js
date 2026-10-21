@@ -1,5 +1,5 @@
 import { pool } from './db/pool.js';
-import { processNextEmailJob } from './modules/email-outbox/outbox.service.js';
+import { processNextEmailJob } from './modules/email-outbox/services/outbox.service.js';
 
 const interval = Number(process.env.POLL_INTERVAL_MS || 2000);
 const heartbeatInterval = Number(process.env.WORKER_HEARTBEAT_INTERVAL_MS || 5000);

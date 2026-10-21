@@ -1,6 +1,6 @@
 import app from './app.js';
 import { pool } from './db/pool.js';
-import { ensureOpenSlots } from './modules/slots/availability.service.js';
+import { ensureOpenSlots } from './modules/slots/services/availability.service.js';
 
 const port = Number(process.env.API_PORT || 4000);
 const refreshInterval = 24 * 60 * 60 * 1000;

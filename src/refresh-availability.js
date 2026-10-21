@@ -1,5 +1,5 @@
 import { pool } from './db/pool.js';
-import { ensureOpenSlots } from './modules/slots/availability.repository.js';
+import { ensureOpenSlots } from './modules/slots/repositories/availability.repository.js';
 
 try {
   const insertedSlots = await ensureOpenSlots();
